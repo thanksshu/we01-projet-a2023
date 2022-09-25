@@ -13,6 +13,23 @@ h1{
   margin-bottom: 15px;
 }
 
+footer {
+    font: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    z-index: 20;
+
+    background-color: #fff;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    border-top: 1px solid #000000;
+}
+
 
 #footer {
     display: flex;
@@ -93,9 +110,61 @@ h1{
   height: 100vh;
 }
 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: 5rem;
+
+    background-color: #fff;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid #000000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #000000;
+    position: relative;
+}
+
+main {
+    padding-bottom: 2rem;
+    padding-left: 20rem;
+    padding-top: 5rem;
+    display: block;
+}
+
+aside {
+    width: 20rem;
+    position: fixed;
+    z-index: 10;
+    margin: 0;
+    top: 5rem;
+    left: 0;
+    bottom: 0;
+
+    background-color: #fff;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    border-right: 1px solid #000000;
+}
+
+
+
+
+
 body {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(215,223,252,1) 0%, rgba(255,255,255,1) 0%, rgba(215,223,252,1) 84% );
   height: 100vh;
+  font-family: Ubuntu, Droid Sans, sans-serif;
+  font-size: 16px;
+
 }
 
 
