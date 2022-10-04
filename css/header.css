@@ -13,13 +13,27 @@ header {
   border-bottom: 0.2px solid #00000060;
 }
 
-header h1 {
-  margin: auto;
+header img {
+  height: 3rem;
 }
 
-header h1 a {
+header a {
+  text-decoration: none;
+}
+
+header span {
   color: black;
   font-size: 2rem;
-  margin: auto;
-  text-decoration: none;
+}
+
+@media screen and (min-width: 751px) {
+  header a span {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header a span {
+    visibility: collapse;
+  }
 }

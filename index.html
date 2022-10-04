@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
@@ -24,33 +24,56 @@
 
 <body>
     <header>
-        <h1><a href="/">« The small Internet » : l'exemple de Gemini</a></h1>
+        <a href="/">
+            <img src="res/android-chrome-512x512.png" alt="site icon">
+            <span>
+                « The small Internet » : l'exemple de Gemini
+            </span>
+        </a>
     </header>
 
     <aside>
         <h1>Menu</h1>
         <ul>
             <li>
-                <a href="#sujet">
-                    <div>
-                        <menu-icon />
-                        </menu-icon>Suject
-                    </div>
+                <a href="/">
+                    <menu-icon />
+                    </menu-icon>Acceuil
+                </a>
+                <ul>
+                    <li>
+                        <a href="/#sujet">
+                            Suject
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/#membre">
+                            Membre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/#bibliographie">
+                            Bibliographie
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/fdl">
+                    <menu-icon />
+                    </menu-icon>Fiche de lecture
+                </a>
+                <ul>
+                    <li><a href="https://pad.picasoft.net/p/lowtech_fiche">Nassim</a></li>
+                    <li><a href="https://week.pad.picasoft.net/p/FDL_v0_Timo">Timo</a></li>
+                    <li><a href="https://md.picasoft.net/s/2iEp5NuP5#">Shang</a></li>
+                    <li><a href="https://pad.picasoft.net/p/FDL_Cros">Antonin</a></li>
+                </ul>
+            </li>
 
-                </a>
-            </li>
-            <li>
-                <a href="#membre">
-                    <menu-icon />
-                    </menu-icon>Membre
-                </a>
-            </li>
-            <li>
-                <a href="#bibliographie">
-                    <menu-icon />
-                    </menu-icon>Bibliographie
-                </a>
-            </li>
+            <ul>
+
+            </ul>
         </ul>
         <button></button>
     </aside>
