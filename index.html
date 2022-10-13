@@ -2,129 +2,137 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
-    <link rel="manifest" href="res/site.webmanifest">
-
-    <style>
-        @import "css/style.css";
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png" />
+    <link rel="manifest" href="res/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>The small Internet</title>
 </head>
 
 <body>
-    <aside>
-        <h1>Menu</h1>
+    <header>
+        <div class="site-title">
+            <img src="res/android-chrome-512x512.png" alt="web icon" /><span>WE11</span>
+        </div>
 
-        <ul>
-            <li>
-                <a href="">
-                    <img src="res/menu_icon_1.svg" alt="menu icon">Accueil
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="res/menu_icon_1.svg" alt="munu icon">Fiche de lecture
-                </a>
-                <ul>
+        <nav class="navbar">
+            <div class="nav-item" tabindex="0">
+                <a href="">Accueil</a>
+            </div>
+            <div class="nav-item" tabindex="0">
+                <span>Fiche de lecture</span>
+                <span class="dropdown-arrow"></span>
+                <ul class="nav-item-dropdown">
                     <li><a href="fdl_nassim.html">Nassim</a></li>
                     <li><a href="fdl_timo.html">Timo</a></li>
                     <li><a href="fdl_shang.html">Shang</a></li>
                     <li><a href="fdl_antonin.html">Antonin</a></li>
                 </ul>
+            </div>
+            <div class="nav-item" tabindex="0">
+                <span>Article</span>
+                <span class="dropdown-arrow"></span>
+                <ul class="nav-item-dropdown">
+                    <li>En construction...</li>
+                </ul>
+            </div>
+            <div class="nav-item" tabindex="0">
+                <span>Radio</span>
+                <span class="dropdown-arrow"></span>
+                <ul class="nav-item-dropdown">
+                    <li>En construction...</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <h1>« The small Internet » : l'exemple de Gemini</h1>
+        <h2>Sujet</h2>
+        <p>
+            Gemini est le petit frère frugal de HTTP : il permet de consulter des
+            sortes de pages web aux fonctionnalités limitées une fois pour toutes.
+            Sans chercher à remplacer HTTP, il tente néanmoins de répondre à ce que
+            ses auteurs considèrent comme des défauts : son extensibilité infinie et
+            l'absence de chiffrement par défaut. Se faisant, il opère des choix
+            techniques indépassables.
+        </p>
+
+        <h3>
+            Le projet Gemini doit-il être vu comme un exemple de low-technicisation
+            ou peut-on au contraire y voir une forme de solutionnisme technologique
+            ?
+        </h3>
+        <ul>
+            <li>
+                Comment imaginer le déploiement d'une technologie limitée by design
+                comme Gemini à une échelle conséquente, notamment sous l'angle de
+                l'acceptation sociale ?
             </li>
             <li>
-                <a href="">
-                    <img src="res/menu_icon_1.svg" alt="munu icon">Article
-                </a>
+                Quelles externalités négatives peut-on imaginer naître de ces
+                limitations ?
             </li>
             <li>
-                <a href="">
-                    <img src="res/menu_icon_1.svg" alt="munu icon">Radio
-                </a>
+                Quelles transposition cela peut-il inspirer en terme de frugalité dans
+                d'autres domaines numérique ?
             </li>
         </ul>
+
+        <h2>Membre</h2>
+        <ul>
+            <li>Timo ALLAIS</li>
+            <li>Nassim BENGHEZAL</li>
+            <li>Antonin CROS</li>
+            <li>Shangyuan HAN</li>
+        </ul>
+
+        <h2>Bibliographie</h2>
+        <ul>
+            <li>
+                BIHOUIX, Philippe, 2014. L'âge des low-tech : Vers une civilisation
+                techniquement soutenable. Seuil. [Acte II. Principes des basses
+                technologies > Remettre en cause les besoins]
+            </li>
+            <li>
+                LOWENHAUPT TSING, Anna et JULIEN, Louise, 2021. Vers une théorie de la
+                non-scalabilité: Multitudes. 14 avril 2021. Vol. n° 82, n° 1, pp.
+                65‑71. DOI 10.3917/mult.082.0065
+            </li>
+            <li>
+                NOVA, Nicolas et ROUSSILHE, Gauthier, 2020. Du low-tech numérique aux
+                numériques situés. Sciences du Design. 2020. Vol. 11, n° 1, pp.
+                91‑101. DOI 10.3917/sdd.011.0091. Cairn.info
+            </li>
+            <li>
+                DAUMAS, Louis, 2020. L’effet-rebond condamne-t-il la transition à
+                l’échec ? Regards croisés sur l’économie. 16 novembre 2020. Vol. n°
+                26, n° 1, pp. 189‑197. DOI 10.3917/rce.026.0189
+            </li>
+            <li>
+                FLIPO, Fabrice, 2021. L'impératif de la sobriété numérique. Cahiers
+                Droit, Sciences & Technologies. 31 octobre 2021. N° 13, pp. 29‑47. DOI
+                10.4000/cdst.4182.
+            </li>
+            <li>
+                FRANA, Philip L., 2004. Before the Web There Was Gopher. IEEE Annals
+                of the History of Computing. janvier 2004. Vol. 26, n° 1, pp. 20‑41.
+                DOI 10.1109/MAHC.2004.1278848.
+            </li>
+        </ul>
+        <br>
         <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-            <img alt="Licence Creative Commons" style="border-width:0"
+            <img alt="Licence Creative Commons" style="border-width: 0"
                 src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
         </a>
-    </aside>
 
-    <main>
-        <article>
-            <h1>
-                « The small Internet » : l'exemple de Gemini
-            </h1>
-            <h2> Sujet </h2>
-            <p>
-                Gemini est le petit frère frugal de HTTP : il permet de consulter des sortes de pages web aux
-                fonctionnalités
-                limitées une fois pour toutes. Sans chercher à remplacer HTTP, il tente néanmoins de répondre à ce que
-                ses
-                auteurs considèrent comme des défauts : son extensibilité infinie et l'absence de chiffrement par
-                défaut. Se
-                faisant, il opère des choix techniques indépassables.
-            </p>
-
-            <h3>Le projet Gemini doit-il être vu comme un exemple de low-technicisation ou peut-on au contraire y voir
-                une
-                forme
-                de solutionnisme technologique ?</h3>
-            <ul>
-                <li>Comment imaginer le déploiement d'une technologie limitée by design comme Gemini à une échelle
-                    conséquente,
-                    notamment sous l'angle de l'acceptation sociale ?</li>
-                <li>Quelles externalités négatives peut-on imaginer naître de ces limitations ?</li>
-                <li>Quelles transposition cela peut-il inspirer en terme de frugalité dans d'autres domaines numérique ?
-                </li>
-            </ul>
-
-            <h2> Membre </h2>
-            <ul>
-
-                <li>Timo ALLAIS</li>
-                <li>Nassim BENGHEZAL</li>
-                <li>Antonin CROS</li>
-                <li>Shangyuan HAN</li>
-
-            </ul>
-
-            <h2> Bibliographie </h2>
-            <ul>
-                <li> BIHOUIX, Philippe, 2014. L'âge des low-tech : Vers une civilisation techniquement soutenable.
-                    Seuil.
-                    [Acte II. Principes des basses technologies > Remettre en cause les besoins]
-                </li>
-                <li> LOWENHAUPT TSING, Anna et JULIEN, Louise, 2021. Vers une théorie de la non-scalabilité: Multitudes.
-                    14
-                    avril 2021. Vol. n° 82, n° 1, pp. 65‑71. DOI 10.3917/mult.082.0065
-                </li>
-                <li> NOVA, Nicolas et ROUSSILHE, Gauthier, 2020. Du low-tech numérique aux numériques situés. Sciences
-                    du
-                    Design. 2020. Vol. 11, n° 1, pp. 91‑101. DOI 10.3917/sdd.011.0091. Cairn.info
-                </li>
-                <li>
-                    DAUMAS, Louis, 2020. L’effet-rebond condamne-t-il la transition à l’échec ? Regards croisés sur
-                    l’économie. 16 novembre 2020. Vol. n° 26, n° 1, pp. 189‑197. DOI 10.3917/rce.026.0189
-                </li>
-                <li>FLIPO, Fabrice, 2021. L'impératif de la sobriété numérique. Cahiers Droit, Sciences & Technologies.
-                    31
-                    octobre 2021. N° 13, pp. 29‑47. DOI 10.4000/cdst.4182.
-                </li>
-                <li>
-                    FRANA, Philip L., 2004. Before the Web There Was Gopher. IEEE Annals of the History of Computing.
-                    janvier 2004. Vol. 26, n° 1, pp. 20‑41. DOI 10.1109/MAHC.2004.1278848.
-                </li>
-            </ul>
-        </article>
-    </main>
-    <script src="js/main.js"></script>
+    </article>
 </body>
 
 </html>
