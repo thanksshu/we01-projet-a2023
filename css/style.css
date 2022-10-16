@@ -81,7 +81,7 @@ header .site-title {
     background: #e3e9ff;
 }
 
-.nav-item:focus .nav-item-dropdown {
+.nav-item:focus-within .nav-item-dropdown {
     display: block;
 }
 
