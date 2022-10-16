@@ -12,8 +12,6 @@ html {
 }
 
 body {
-    background: #e3e9ff;
-
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
@@ -27,7 +25,7 @@ header {
     border-bottom: 1px solid grey;
     padding: 0.8rem;
     z-index: 10;
-    background: #d5deff;
+    background: #dbf0ff;
 
     display: flex;
     justify-content: space-between;
@@ -44,7 +42,7 @@ header .site-title {
     height: 2rem;
 }
 
-.logo ~ span {
+.logo~span {
     font-weight: 600;
     font-size: 1.6rem;
 }
@@ -54,7 +52,7 @@ header .site-title {
         padding: 0.6rem;
     }
 
-    .logo ~ span {
+    .logo~span {
         display: none;
     }
 }
@@ -78,22 +76,7 @@ header .site-title {
     padding: 1rem 2rem;
     border-radius: 0.2rem;
     border: 1px solid gray;
-    background: #e3e9ff;
-}
-
-.nav-item:focus-within .nav-item-dropdown {
-    display: block;
-}
-
-/* article part */
-
-article {
-    position: absolute;
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    max-width: 80%;
-    margin: 5rem auto;
+    background: #f4fbff;
 }
 
 .dropdown-arrow {
@@ -102,3 +85,28 @@ article {
     border-right: 4px solid transparent;
     border-top: 6px solid black;
 }
+
+.nav-item:focus-within .nav-item-dropdown {
+    display: block;
+}
+
+/* article part */
+
+.article {
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    max-width: 60%;
+    margin: 5rem auto;
+}
+
+.article>h1,
+.article>h2,
+.article>h3,
+.article>h4,
+.article>h5,
+.article>h6 {
+    margin: 1.2rem 0rem;
+}
+
