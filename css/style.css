@@ -13,7 +13,15 @@ html {
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* navbar part */
@@ -68,7 +76,6 @@ header .site-title {
 }
 
 .nav-item .nav-item-dropdown {
-    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -79,45 +86,46 @@ header .site-title {
     background: #f4fbff;
 }
 
-.dropdown-arrow {
-    display: inline-block;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 6px solid black;
-}
-
-.nav-item:focus-within .nav-item-dropdown {
-    display: block;
-}
-
 /* article part */
 
 .article {
     position: absolute;
-    top: var(--header-height);
     left: 0;
     right: 0;
-    max-width: 60%;
-    margin: 5rem auto;
+    margin: var(--header-height) auto;
+    padding: 3rem;
+    max-width: 75%;
+
+    line-height: 1.6rem;
 }
 
-.article>h1,
-.article>h2,
-.article>h3,
-.article>h4,
-.article>h5,
-.article>h6 {
+.article h1,
+.article h2,
+.article h3 {
+    line-height: 2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5rem;
+    margin: 1.2rem 0;
+}
+
+.article h4,
+.article h5,
+.article h6 {
+    line-height: 2rem;
     margin: 1.2rem 0;
 }
 
 .article p,
-.article li
-{
+.article li,
+.article ol {
     margin: 0.8rem 0;
     text-align: justify;
 }
 
 .article .reference {
-    color: gray;
+    width: 95%;
+    margin: 0.6rem auto;
+    padding: 1rem 1.2rem;
+    border-left: 0.5rem solid #dbf0ff;
+    background-color: #d4e3f2;
 }
-
