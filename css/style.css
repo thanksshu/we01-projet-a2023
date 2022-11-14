@@ -76,6 +76,7 @@ header .site-title {
     margin-left: 1rem;
     position: relative;
     white-space: nowrap;
+    user-select: none;
 }
 
 .nav-item .nav-item-dropdown {
