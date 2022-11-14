@@ -16,6 +16,8 @@ body {
     font-size: 18px;
 }
 
+/* beautify link */
+
 a {
     text-decoration: none;
 }
@@ -55,9 +57,10 @@ header .site-title {
     font-size: 1.6rem;
 }
 
+/* fit mobile view */
 @media only screen and (max-device-width: 768px) {
     header {
-        padding: 0.6rem;
+        padding: 0.4rem;
     }
 
     .logo~span {
@@ -103,7 +106,7 @@ header .site-title {
 .article h2,
 .article h3 {
     line-height: 2rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.500);
     padding-bottom: 0.5rem;
     margin: 1.2rem 0;
 }

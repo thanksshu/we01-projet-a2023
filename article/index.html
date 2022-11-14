@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../res/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../res/favicon-16x16.png">
+    <link rel="manifest" href="../res/site.webmanifest">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Article</title>
+</head>
+
+<body>
+    <header>
+        <a class="site-title" href="/~hanshang/projet">
+            <img src="../res/android-chrome-512x512.png" alt="site icon" class="logo"><span>WE01</span>
+        </a>
+    </header>
+    <article class="article">
+        <h1 id="introduction">Introduction</h1>
+        <h2 id="problématique">Problématique</h2>
+        <p>Le projet Gemini doit-il être vu comme un exemple de low-technicisation ou peut-on au contraire y voir une
+            forme de solutionnisme technologique ?</p>
+        <h2 id="présentation-de-gopher-et-gemini">Présentation de Gopher et Gemini</h2>
+        <p>Gopher est un <strong>protocole</strong> Internet permettant de rechercher et de parcourir du contenu en
+            ligne qui a existé au début des années 1990, mais qui a fini par céder la place à HTTP et au World Wide Web.
+            Il existe toujours aujourd’hui et Gemini est son successeur, avec une sécurité améliorée et des milliers de
+            serveurs indépendants (appelés capsules) fonctionnant sur du matériel à faible coût.</p>
+        <p>Le “projet Gemini” a débuté en juin 2019. Il est le fruit du travail d’une communauté qui se décrit elle-même
+            comme une “communauté libre et informelle”, dont l’objectif est de s’attaquer à ce qu’elle appelle les
+            “défauts” de la navigation sur le web d’aujourd’hui, comme les publicités pop-up, le suivi et les vidéos en
+            lecture automatique. Le but est la publication “légère” d’informations, principalement textuelles.</p>
+        <p>“Vous pouvez considérer Gemini comme ’le Web, ramené à son essence”, explique la FAQ officielle, “ou comme
+            Gopher, amélioré et modernisé juste un peu”.</p>
+        <p>Mais le projet Gemini a tout autant réfléchi à ce qu’il fallait laisser de côté. Quiconque a lu le journal
+            d’un serveur Web sait que les requêtes HTTP contiennent une multitude d’informations, notamment les en-têtes
+            “User-Agent” et “Referer”. Mais il n’y a qu’un seul champ dans une requête Gemini : l’URL demandée.</p>
+        <p>“Cela contribue grandement à <strong>empêcher le suivi des utilisateurs</strong>”, indique la FAQ.</p>
+        <p>Et comme il n’y a qu’un seul type de requête - obtenir quelque chose - les en-têtes de réponse peuvent
+            indiquer le type de contenu servi et rien d’autre. “Pour minimiser le risque que Gemini se transforme
+            lentement en quelque chose de plus proche du Web, il a été décidé d’inclure une seule et unique information
+            dans l’en-tête de réponse pour les requêtes réussies.”</p>
+        <p>L’en-tête manquant est le numéro de protocole - car il n’y aura jamais qu’un seul protocole. Le plan consiste
+            à “faire les choses bien du premier coup” autant que possible, puis à geler la spécification du protocole
+            pour toujours, sans mises à jour, améliorations ou extensions… “Gemini est utile et bon pour de nombreuses
+            choses aujourd’hui, et il n’y a aucune raison de penser qu’il ne sera pas utile et bon pour ces mêmes choses
+            dans plusieurs décennies.”</p>
+        <p>Ou, comme ils le disent plus loin, un désir d’éliminer le suivi commun dans les navigateurs web “se manifeste
+            par une <strong>non-extensibilité</strong> délibérée.” </p>
+        <p>En bref, la FAQ décrit le projet Gemini comme “une réaction”moins, c’est plus” contre les navigateurs et les
+            serveurs web qui deviennent trop compliqués et trop puissants…“.</p>
+        <p>“Les suggestions de nouvelles fonctionnalités ne seront pas prises en compte, car le protocole est considéré
+            comme complet en termes de fonctionnalités”, explique la FAQ. “L’objectif principal du projet est maintenant
+            de <strong>développer la communauté</strong> autour du protocole et de <strong>traduire la
+                spécification</strong> existante en une version plus précise et plus formelle qui pourrait être soumise
+            aux organismes de normalisation de l’Internet tels que l’<strong>IETF</strong> et l’<strong>IANA</strong>”.
+        </p>
+        <p>Le projet offre également une nouvelle perspective d’évolution du web basé sur le HTML - par exemple, avec
+            l’<strong>absence d’un langage de style</strong> comme le CSS permettant ainsi une <strong>navigation sans
+                distraction</strong>. “Gemini prend plutôt la position que le style visuel du contenu Gemini devrait
+            être sous le <strong>contrôle unique et direct du lecteur</strong>, et non de l’écrivain”, argumente la FAQ.
+            “Tout le monde n’a pas les mêmes goûts en matière de couleurs et de polices, et aucune façon de styliser une
+            page ne sera optimale pour tous les lecteurs, tous les appareils… Il est beaucoup plus
+            <strong>simple</strong>, et en fait beaucoup plus <strong>libérateur</strong> pour les auteurs de contenu,
+            de laisser le contenu être simplement du contenu, et de laisser le stylisme au client.” </p>
+        <p>Pour maintenir la compatibilité avec l’esprit du <strong>bricolage</strong>, le projet Gemini intègre des
+            technologies familières/standardisées/matures comme TLS, avec une syntaxe de type URL. Il s’agit également
+            d’une décision intentionnelle, visant spécifiquement à <strong>simplifier</strong> la création de nouveaux
+            logiciels de navigation compatibles avec Gemini (qui “devrait être un projet de programmation réalisable le
+            week-end pour un seul développeur…”), Gemini est un projet à taille humaine.</p>
+        <p>“Les navigateurs web modernes sont si compliqués qu’ils ne peuvent être développés que par des projets
+            coûteux et très importants”, note la FAQ. “Cela conduit naturellement à un très petit nombre de navigateurs
+            en situation de quasi-monopole, ce qui étouffe l’innovation et la diversité et permet aux développeurs de
+            ces navigateurs de dicter la direction dans laquelle le web évolue”.</p>
+        <h2 id="en-quoi-gemini-est-il-différent-de-gopher">En quoi Gemini est-il différent de Gopher ?</h2>
+        <p>Au départ, Gopher était un logiciel <strong>propriétaire</strong> entretenu par les auteurs eux-mêmes, puis
+            il s’est retrouvé dans une situation inconfortable de sous-financement en raison de l’échec de sa
+            commercialisation. Gemini ne commet pas la même erreur, à l’instar du World Wide Web, son logiciel du
+            serveur est libre et gratuit, ce qui signifie que chacun peut l’utiliser, l’adapter et le distribuer à sa
+            guise.</p>
+        <p>Gopher ne peut pas produire de pages Web multimédias de la même manière que le HTML. En outre, Gopher
+            utilisait une structure hiérarchique pour accéder aux données sur Internet, ce qui était généralement
+            considéré comme inapproprié : le web devrait être un maillage distribué, ce qui simplifie la gestion et
+            correspond à la façon dont les gens pensent. En combinant ces deux raisons, parmi les améliorations
+            apportées par Gemini à Gopher, citons la possibilité d’utiliser des jeux de caractères non ASCII et
+            d’identifier le contenu binaire avec les types MIME (ce qui permet le transfert de divers formats, notamment
+            le texte brut, le texte enrichi, le HTML et le Markdown). Il autorise également les liens à l’intérieur des
+            documents, ce qui est essentiel.</p>
+        <p>Comme beaucoup de projets de <strong>rétro-informatique</strong>, Gopher et Gemini utilisent les jeux de mots
+            pour se définir. Gopher a été appelé ainsi parce que si les utilisateurs demandaient une ressource, celle-ci
+            “allait” vers eux, comme un système de récupération de données. Les sites Gopher étaient appelés Gopher
+            Holes.</p>
+        <p>Gemini a pour thème l’exploration spatiale et son nom fait référence au programme spatial Gemini. Les sites
+            Gemini sont appelés capsules, et le port utilisé est 1965, en commémoration du premier vol spatial en
+            équipage de Gemini en 1965.</p>
+        <p>Étant donné que Gopher est né et a disparu avant 1999 - avant la normalisation de TLS 1.0 - il n’était pas
+            aussi axé sur la sécurité que Gemini, en exigeant des <strong>certificats</strong> auto-signés pour chaque
+            capsule. </p>
+        <p><a href="https://ieeexplore.ieee.org/document/1278848/"
+                class="uri">https://ieeexplore.ieee.org/document/1278848/</a> </p>
+        <h2 id="linstallation-dune-capsule-gemini-est-facile-et-bon-marché">L’installation d’une capsule Gemini est
+            facile et bon marché</h2>
+        <p>Pratiquement tout ordinateur produit au cours des 30 dernières années peut accueillir une capsule Gemini, à
+            condition qu’il soit capable d’exécuter une distribution <strong>Linux</strong>. Les Raspberry Pi sont
+            particulièrement populaires en raison de leur faible coût (même s’il y a une pénurie en ce moment) et de
+            leur <strong>faible consommation d’énergie</strong>. Étant donné que les ressources utilisées par Gemini
+            sont minuscules, une Raspberry Pi Zero peut parfaitement faire l’affaire.</p>
+        <p>Il faut disposer d’un nom de domaine pour héberger une capsule. Il suffit d’en obtenir chez des hébergeurs
+            comme Gandi.</p>
+        <p>La première étape est de visiter le site de nom de domaine, et de créer un nouvel enregistrement DNS, puis de
+            paramétrer le routeur.</p>
+        <p>La deuxième et dernière étape est de configurer Gemini sur la machine en suivant la documentation disponible
+            en open source sur Internet.</p>
+        <h2 id="accédez-à-votre-capsule-gemini-de-nimporte-où">Accédez à votre capsule Gemini de n’importe où</h2>
+        <p>Gemini ne fonctionne pas comme HTTP, vous ne pouvez pas utiliser un navigateur web “normal” pour y accéder.
+            Il existe cependant un certain nombre de navigateurs qui peuvent visiter à la fois les trous Gopher et les
+            capsules Gemini comme Kristall.</p>
+        <p>Tout comme HTTP, il suffit de taper :</p>
+        <ul>
+            <li>Gopher : <code>gopher://</code></li>
+            <li>Gemini : <code>gemini://</code></li>
+        </ul>
+        <p>Le protocole Gemini est basé sur TLS et bien que les 3 protocoles soient cloisonnés entre eux, il existe des
+            <strong>passerelles</strong> du côté de Gemini et Gopher, vers HTTP. </p>
+        <h2 id="mais-alors-quelles-peuvent-être-les-critiques">Mais alors qu’elles peuvent être les critiques ?</h2>
+        <p>Le protocole Gemini suscite des réactions (et pas seulement parce qu’il exige un nom long avant le :// d’une
+            URL). Beaucoup le considèrent comme une tentative inutile de protocole qui met des éléments HTML et HTTP à
+            la façon de Gopher, comme une réplique. Bien sûr, il améliore la sécurité par rapport au serveur Gopher
+            traditionnel, mais avoir un rendu ayant un contenu riche donne des pages HTML “lite” à faible valeur
+            ajoutée. Le balisage Gemtext, quant à lui, est critiqué pour être un clone du Markdown avec des balises
+            d’ancrage moins efficaces.</p>
+        <p>C’est à ce stade qu’un analyste commercial vivant dans une économie financière mondialisée et capitalistique
+            examinerait Gemini et le déclarerait mort-né. Où est l’argent à gagner ? Gemini n’a pas l’air rentable.</p>
+        <p><a href="https://lobste.rs/s/ivryqt/what_is_this_gemini_thing_anyway_why_am_i"
+                class="uri">https://lobste.rs/s/ivryqt/what_is_this_gemini_thing_anyway_why_am_i</a></p>
+        <p>Un utilisateur du forum lobste.rs a écrit à propos de Gemini : “Il est donc <strong>inutile pour tous les cas
+                d’utilisation, sauf les plus simples</strong>, et même là, il fait un travail très médiocre. J’aimerais
+            avoir une image en ligne de temps en temps, ou organiser les choses dans des dispositions à plusieurs
+            colonnes ou similaires, ou un tableau. Les journaux du XIXe siècle pourraient le faire, et si votre
+            technologie ne peut pas émuler la typographie produite quotidiennement – souvent à la hâte – il y a 150 ans,
+            alors votre technologie est plutôt <strong>limitée</strong>.</p>
+        <p>Ces protocoles n’arrêtent pas de se tirer une balle dans la tête avec des trucs comme ça, pas même dans le
+            pied parce que tout ça est mort à l’arrivée pour tous sauf <strong>quelques techniciens de niche</strong>. ”
+        </p>
+        <p>Ce qui peut tout à fait être un <strong>argument recevable</strong> vu le nombre de likes (35) de la
+            publication, mais devault réplique que ce n’est pas l’utilisation prévue, et que c’est justement pour
+            <strong>éviter l’effet rebond</strong> et le superflu qu’il n’est pas possible de tout réaliser. Gemini ne
+            vise pas à remplacer le Web. </p>
+        <p>/<em>/</em>///*raison computationnelle</p>
+        <p>/*/**/<em>/</em> L’utilisateur peut gérer les externalités et pas seulement le webmaster du site.</p>
+        <p>southerntofu9 s’intéresse au low tech et fait l’analogie suivante : “Pour moi, l’équivalent dans le monde
+            physique serait si vous n’êtes pas satisfait d’une maison utilisant trop de ressources/d’énergie et que vous
+            décidez de vivre sans murs ni sol, avec un simple plafond au-dessus de la tête. Bien sûr, il fait le travail
+            de vous protéger de la pluie, mais correspond-il à toutes les autres fonctionnalités que nous attendons
+            d’une maison ? Je suis beaucoup plus intéressé par un logement à base d’argile (ou d’autres matériaux
+            locaux), personnellement.”</p>
+        <p>/<em>/</em>/**/<em>/</em></p>
+        <p><a href="https://news.ycombinator.com/item?id=25811478"
+                class="uri">https://news.ycombinator.com/item?id=25811478</a> </p>
+        <p>cxr pense “que la véritable tragédie de Gemini est que, bien que son existence soit une réaction à un
+            véritable problème, ce qu’il propose comme solution est un élément de technologie qui, en plus d’avoir de
+            nouveaux problèmes propres, fait également des promesses nébuleuses, ne s’attaque pas au problème
+            sous-jacent et repose sur des arguments peu rationnels qui ne sont pas fondés sur une pensée claire ou même
+            une compréhension claire. C’est un autre exemple de mauvaise solution à un problème qui aggrave ce dernier.
+            C’est ce qui se produit lorsque les mauvaises solutions attirent l’attention des personnes concernées et/ou
+            affectées par le problème, et qu’elles détournent les ressources du problème au lieu de permettre à ces
+            ressources d’être mieux utilisées - c’est-à-dire dans des efforts qui peuvent être réellement efficaces.”
+        </p>
+        <p>Alexwenerberg a bien résumé sa pensée : Gemini est vu comme une <strong>expérience technologique</strong>.
+            “Gemini est une technologie qui nous invite non pas à essayer de l’améliorer ou de l’optimiser, mais à
+            l’accepter telle qu’elle est et à <strong>contourner</strong> ses limites - elle est volontairement austère,
+            et c’est une fonctionnalité, pas un bug.”</p>
+        <p><a href="https://news.ycombinator.com/item?id=27490769"
+                class="uri">https://news.ycombinator.com/item?id=27490769</a> </p>
+        <p><a href="https://news.ycombinator.com/item?id=30067400"
+                class="uri">https://news.ycombinator.com/item?id=30067400</a> </p>
+        <p><a href="https://マリウス.com/gemini-is-solutionism-at-its-worst/"
+                class="uri">https://マリウス.com/gemini-is-solutionism-at-its-worst/</a></p>
+        <hr />
+        <p>D’un point de vue technologique et culturel, ces protocoles “fait maison (DIY)” et en plein essor
+            représentent la même philosophie que les navigateurs open source. Mozilla a prévenu il y a longtemps que
+            Firefox était essentiellement le dernier navigateur non contrôlé par les entreprises. Microsoft a abandonné
+            son moteur de rendu Edge HTML et a adopté Chromium dans son navigateur Edge. Cela réduit la concurrence sur
+            le marché des navigateurs, tout en donnant le contrôle de la façon dont nous visualisons l’internet, le
+            rendu des pages web est entre les mains de quelques-uns. Et ces quelques personnes créent de la valeur et
+            acquièrent des revenus grâce au suivi, à la publicité et à la collecte de données. Est-il approprié que HTTP
+            et le World Wide Web soient le protocole Internet dominant où le rendu des pages Web est contrôlé
+            principalement par Chromium, qui est dirigé par une société qui contrôle la majorité du trafic de recherche
+            sur Internet et réalise plus de 90 % de ses revenus grâce à la publicité ? L’utilisateur devient le produit
+            !</p>
+        <blockquote>
+            <p>“Si Chromium a une part de marché suffisante, alors il devient plus facile pour les développeurs web et
+                les entreprises de décider de ne pas s’inquiéter si leurs services et sites fonctionnent avec autre
+                chose que Chromium”, a écrit Chris Beard, le PDG de Mozilla.</p>
+        </blockquote>
+        <p>La consolidation des entreprises conduit à des monopoles. Sur Internet, la consolidation conduit à un choix
+            limité et à une expérience contrôlée. Les protocoles expérimentaux comme Gemini (que vous soyez ou non
+            intéressé par Gemini) semblent prometteurs, car ils proviennent de personnes qui se battent encore pour la
+            liberté sur Internet, l’exploration technologique et les espaces collectifs et collaboratifs.</p>
+        <h2 id="conclusion">Conclusion</h2>
+        <p>Gemini se positionne en tant que solution alternative qui pourrait être vu comme un exemple de low
+            technicisation poussé à l’extrême, ou comme une expérience technologique nouvelle. Comme nous l’avons
+            envisagé précédemment, il pourrait s’agir simplement d’un groupe de programmeurs nostalgique qui se
+            languissent des “meilleures années” de leur jeunesse… mais nous pouvons affirmer que c’est plutôt d’une
+            prise de conscience que la promesse de l’Internet a été saisie par une poignée d’entreprises, et que nous
+            avons perdu la “liberté” que ces premières années d’exploration nous ont fait découvrir.</p>
+        <hr />
+        <h2 id="bibliographie">Bibliographie</h2>
+        <ol type="1">
+            <li>FAQ : <a href="https://gemini.circumlunar.space/docs/faq.gmi"
+                    class="uri">https://gemini.circumlunar.space/docs/faq.gmi</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Gemini_(protocole)"
+                    class="uri">https://fr.wikipedia.org/wiki/Gemini_(protocole)</a></li>
+            <li><a href="https://www.bortzmeyer.org/gemini.html" class="uri">https://www.bortzmeyer.org/gemini.html</a>
+            </li>
+        </ol>
+    </article>
+
+</body>
+
+</html>
