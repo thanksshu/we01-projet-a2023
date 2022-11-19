@@ -126,10 +126,25 @@ header .site-title {
     text-align: justify;
 }
 
-.article .reference {
+.article blockquote {
     width: 95%;
     margin: 0.6rem auto;
     padding: 1rem 1.2rem;
     border-left: 0.5rem solid #dbf0ff;
     background-color: #d4e3f2;
+}
+
+.article figure>img {
+    display: block;
+    max-width: 60%;
+    margin: auto auto;
+}
+
+.article figure>figcaption {
+    display: block;
+    max-width: 80%;
+    margin: auto auto;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(96, 96, 96);
 }
