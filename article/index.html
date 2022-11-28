@@ -22,7 +22,8 @@
         </a>
     </header>
     <article class="article">
-        <h1 id="introduction">Introduction</h1>
+        <h1 id="article">Article</h1>
+        <h2 id="introduction">Introduction</h2>
         <p>Les protocoles Internet les plus répandus et utilisés en 2022 sont les protocoles HTTP, ou HTTPS. Il en
             existe cependant d’autres que ceux là, par exemple les protocoles Gopher et Gemini dont il sera question
             dans cet article. Le protocole Gemini se réfère au projet du même nom, le projet Gemini, visant la
@@ -39,18 +40,19 @@
             ligne qui a existé au début des années 1990, mais qui a fini par céder la place à HTTP et au World Wide Web.
         </p>
         <figure> <img src="https://md.picasoft.net/uploads/upload_8efb31237dd335690741a1301dbdab64.png"
-                alt="Exemple d’une page Gopher sur le navigateur Forg v0.5.1. Emil Engler, 8 Janvier 2020, CC0, via Wikimedia Commons">
+                alt="Exemple d’une page Gopher sur le navigateur Forg v0.5.1. Emil Engler, 8 Janvier 2020, CC0, via Wikimedia Commons" />
             <figcaption aria-hidden="true">Exemple d’une page Gopher sur le navigateur Forg v0.5.1. Emil Engler, 8
                 Janvier 2020, CC0, via Wikimedia Commons</figcaption>
         </figure>
         <!-- Figure 1 - Exemple d'une page Gopher sur le navigateur Forg v0.5.1. > Auteur : Emil Engler, date : 8 Janvier 2020, sous licence CC0 > Source :  https://commons.wikimedia.org/wiki/File:Wikipedia_Gopher_forg_v0.5.1.png -->
         <p>Il existe toujours aujourd’hui et Gemini est son successeur, avec une sécurité améliorée et des milliers de
             serveurs indépendants (appelés capsules) fonctionnant sur du matériel à faible coût.</p>
-        <p>Le “projet Gemini” a débuté en juin 2019. Il est le fruit du travail d’une communauté qui se décrit elle-même
-            comme une “communauté libre et informelle”<sup><a href="#ref-9">1</a></sup>, dont l’objectif est de
-            s’attaquer à ce qu’elle appelle les “défauts” de la navigation sur le web d’aujourd’hui, comme les
-            publicités pop-up, le suivi et les vidéos en lecture automatique. Le but est la publication “légère”
-            d’informations, principalement textuelles.<sup><a href="#ref-1">2</a></sup></p>
+        <p>Le “projet Gemini” a débuté en juin 2019.<sup><a href="#ref-18">1</a></sup> Il est le fruit du travail d’une
+            communauté qui se décrit elle-même comme une “communauté libre et informelle”<sup><a
+                    href="#ref-9">2</a></sup>, dont l’objectif est de s’attaquer à ce qu’elle appelle les “défauts” de
+            la navigation sur le web d’aujourd’hui, comme les publicités pop-up, le suivi et les vidéos en lecture
+            automatique. Le but est la publication “légère” d’informations, principalement textuelles.<sup><a
+                    href="#ref-1">3</a></sup></p>
         <p>“Vous pouvez considérer Gemini comme”le Web, ramené à son essence”, explique la FAQ officielle, “ou comme
             Gopher, amélioré et modernisé juste un peu”.</p>
         <p>Mais le projet Gemini a tout autant réfléchi à ce qu’il fallait laisser de côté. Quiconque a lu le journal
@@ -91,7 +93,7 @@
         <h2 id="en-quoi-gemini-est-il-différent-de-gopher">En quoi Gemini est-il différent de Gopher ?</h2>
         <p>Au départ, Gopher était un logiciel <strong>propriétaire</strong> entretenu par les auteurs eux-mêmes, puis
             il s’est retrouvé dans une situation inconfortable de sous-financement en raison de l’échec de sa
-            commercialisation.<sup><a href="#ref-2">3</a></sup> Gemini ne commet pas la même erreur, à l’instar du World
+            commercialisation.<sup><a href="#ref-2">4</a></sup> Gemini ne commet pas la même erreur, à l’instar du World
             Wide Web, son logiciel du serveur est libre et gratuit, ce qui signifie que chacun peut l’utiliser,
             l’adapter et le distribuer à sa guise.</p>
         <p>Gopher ne peut pas produire de pages Web multimédias de la même manière que le HTML. En outre, Gopher
@@ -128,14 +130,14 @@
         <h2 id="accédez-à-votre-capsule-gemini-de-nimporte-où">Accédez à votre capsule Gemini de n’importe où</h2>
         <p>Gemini ne fonctionne pas comme HTTP, vous ne pouvez pas utiliser un navigateur web “normal” pour y accéder.
             Il existe cependant un certain nombre de navigateurs qui peuvent visiter à la fois les trous Gopher et les
-            capsules Gemini comme Kristall.<sup><a href="#ref-5">4</a></sup></p>
+            capsules Gemini comme Kristall.<sup><a href="#ref-5">5</a></sup></p>
         <p>Tout comme HTTP, il suffit de taper :</p>
         <ul>
             <li>Gopher : <code>gopher://</code></li>
             <li>Gemini : <code>gemini://</code></li>
         </ul>
         <figure> <img src="https://md.picasoft.net/uploads/upload_2ff5d1e64352dcc94c62bff8794080f5.png"
-                alt="Figure 2 - Exemple d’une page Gemini sur le navigateur Castor.Brevity, date : 9 décembre 2020, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons">
+                alt="Figure 2 - Exemple d’une page Gemini sur le navigateur Castor.Brevity, date : 9 décembre 2020, CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0, via Wikimedia Commons" />
             <figcaption aria-hidden="true">Figure 2 - Exemple d’une page Gemini sur le navigateur Castor.Brevity, date :
                 9 décembre 2020, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0"
                     class="uri">https://creativecommons.org/licenses/by-sa/4.0</a>, via Wikimedia Commons</figcaption>
@@ -148,11 +150,11 @@
         <p>Le protocole Gemini suscite des réactions (et pas seulement parce qu’il exige un nom long avant le :// d’une
             URL). Des utilisateurs de Gemini sur Reddit (r/geminiprotocol/), ainsi que des ingénieurs (comme Drew
             DeVault et Daniel Stenberg) le considèrent comme une tentative inutile de protocole qui met des éléments
-            HTML et HTTP à la façon de Gopher, comme une réplique.<sup><a href="#ref-4">5</a></sup></p>
+            HTML et HTTP à la façon de Gopher, comme une réplique.<sup><a href="#ref-4">6</a></sup></p>
         <blockquote>
             <p>“Pour moi, Gemini ressemble à un mélange de Gopher et HTTP/0.9” Daniel Stenberg, fondateur et développeur
                 de cURL (interface en ligne de commande destinée à récupérer le contenu d’une ressource)<sup><a
-                        href="#ref-11">6</a></sup></p>
+                        href="#ref-11">7</a></sup></p>
         </blockquote>
         <p>Bien sûr, il améliore la sécurité par rapport au serveur Gopher traditionnel, mais avoir un rendu ayant un
             contenu riche donne des pages HTML “lite” à faible valeur ajoutée. Le balisage Gemtext, quant à lui, est
@@ -165,7 +167,7 @@
             avoir une image en ligne de temps en temps, ou organiser les choses dans des dispositions à plusieurs
             colonnes ou similaires, ou un tableau. Les journaux du XIXe siècle pourraient le faire, et si votre
             technologie ne peut pas émuler la typographie produite quotidiennement – souvent à la hâte – il y a 150 ans,
-            alors votre technologie est plutôt <strong>limitée</strong>.<sup><a href="#ref-10">7</a></sup></p>
+            alors votre technologie est plutôt <strong>limitée</strong>.<sup><a href="#ref-10">8</a></sup></p>
         <p>Ces protocoles n’arrêtent pas de se tirer une balle dans la tête avec des trucs comme ça, pas même dans le
             pied parce que tout ça est mort à l’arrivée pour tous sauf <strong>quelques techniciens de niche</strong>. ”
         </p>
@@ -173,18 +175,18 @@
                 graphique</strong> de Goody montre qu’il y a une émergence de représentations qui ne peuvent être
             formulées oralement. Goody expose l’exemple du tableau ou de la liste qui permettent de mettre en relief des
             relations qui ne pourraient émerger par la description orale du tableau ou de la liste. “Changer de support
-            c’est changer de raisonnement”<sup><a href="#ref-8">8</a></sup> 2. si l’on s’arrête au front-end et que l’on
+            c’est changer de raisonnement”<sup><a href="#ref-8">9</a></sup> 2. si l’on s’arrête au front-end et que l’on
             ne réflechit pas en terme d’utilisations de ressources (serveurs …), on oublie le développement durable.</p>
         <p>Devault réplique que ce n’est pas l’utilisation prévue, et que c’est justement pour <strong>éviter l’effet
                 rebond</strong> et le superflu qu’il n’est pas possible de tout réaliser. Il y a la nécessité d’avoir
             une page WEB lowtech ayant un impact carbone faible (en CO2) dans une optique de développement durable.
             L’utilisateur peut gérer les externalités et pas seulement le webmaster du site.<sup><a
-                    href="#ref-1">1</a></sup> <sup><a href="#ref-8">8</a></sup></p>
+                    href="#ref-1">3</a></sup> <sup><a href="#ref-8">9</a></sup></p>
         <p>Gemini ne vise pas à remplacer le Web, en effet : =&gt; en s’appuyant sur la théorie de la raison
             computationnelle proposée par Bachimont, l’ordinateur traite l’information que l’on rentre sur Internet par
             un formulaire, ou par un processus d’analyse de données (cookie…). Certaines applications comme le Google
             Maps voire même OpenStreetMap, ne pourraient pas exister dans Gemini de part leurs natures.<sup><a
-                    href="#ref-3">9</a></sup></p>
+                    href="#ref-3">10</a></sup></p>
         <p>southerntofu9 s’intéresse au low tech et fait l’analogie suivante : “Pour moi, l’équivalent dans le monde
             physique serait si vous n’êtes pas satisfait d’une maison utilisant trop de ressources/d’énergie et que vous
             décidez de vivre sans murs ni sol, avec un simple plafond au-dessus de la tête. Bien sûr, il fait le travail
@@ -199,12 +201,12 @@
             C’est ce qui se produit lorsque les mauvaises solutions attirent l’attention des personnes concernées et/ou
             affectées par le problème, et qu’elles détournent les ressources du problème au lieu de permettre à ces
             ressources d’être mieux utilisées - c’est-à-dire dans des efforts qui peuvent être réellement
-            efficaces.”<sup><a href="#ref-7">10</a></sup></p>
+            efficaces.”<sup><a href="#ref-7">11</a></sup></p>
         <p>Alexwenerberg a bien résumé sa pensée : Gemini est vu comme une <strong>expérience technologique</strong>.
             “Gemini est une technologie qui nous invite non pas à essayer de l’améliorer ou de l’optimiser, mais à
             l’accepter telle qu’elle est et à <strong>contourner</strong> ses limites - elle est volontairement austère,
             et c’est une fonctionnalité, pas un bug.”</p>
-        <hr>
+        <hr />
         <p>D’un point de vue technologique et culturel, ces protocoles “fait maison (DIY)” et en plein essor
             représentent la même philosophie que les navigateurs open source. Mozilla a prévenu il y a longtemps que
             Firefox était essentiellement le dernier navigateur non contrôlé par les entreprises. Microsoft a abandonné
@@ -219,7 +221,7 @@
         <blockquote>
             <p>“Si Chromium a une part de marché suffisante, alors il devient plus facile pour les développeurs web et
                 les entreprises de décider de ne pas s’inquiéter si leurs services et sites fonctionnent avec autre
-                chose que Chromium”, a écrit Chris Beard, le PDG de Mozilla.<sup><a href="#ref-12">11</a></sup></p>
+                chose que Chromium”, a écrit Chris Beard, le PDG de Mozilla.<sup><a href="#ref-12">12</a></sup></p>
         </blockquote>
         <p>La consolidation des entreprises conduit à des monopoles. Sur Internet, la consolidation conduit à un choix
             limité et à une expérience contrôlée. Les protocoles expérimentaux comme Gemini (que vous soyez ou non
@@ -300,8 +302,13 @@
             avons perdu la “liberté” que ces premières années d’exploration nous ont fait découvrir.</p>
         <h2 id="bibliographie">Bibliographie</h2>
         <ol type="1">
+            <li><a id="ref-18"></a> Projet Gemini - Révolution de l’internet (traduction de l’article)<a
+                    href="https://www.inapps.net/project-geminis-plan-to-revolutionize-internet-browsing-inapps-2022/"
+                    class="uri">https://www.inapps.net/project-geminis-plan-to-revolutionize-internet-browsing-inapps-2022/</a>
+                Consulté le 23 novembre 2022.</li>
             <li><a id="ref-9"></a>Project Gemini FAQ. <a href="https://gemini.circumlunar.space/docs/faq.gmi"
-                    class="uri">https://gemini.circumlunar.space/docs/faq.gmi</a>. Consulté le 19 novembre 2022.</li>
+                    class="uri">https://gemini.circumlunar.space/docs/faq.gmi</a>. Consulté le 19 novembre 2022.2. 3.
+            </li>
             <li><a id="ref-1"></a> Blog Stéphane Bortzmeyer: Le protocole Gemini, revenir à du simple et sûr pour
                 distribuer l’information en ligne ? <a href="https://www.bortzmeyer.org/gemini.html"
                     class="uri">https://www.bortzmeyer.org/gemini.html</a>. Consulté le 19 novembre 2022.</li>
@@ -336,9 +343,6 @@
                     href="https://www.zdnet.com/article/mozilla-why-microsoft-edges-switch-to-googles-chromium-is-bad-news/"
                     class="uri">https://www.zdnet.com/article/mozilla-why-microsoft-edges-switch-to-googles-chromium-is-bad-news/</a>.
                 Consulté le 19 novembre 2022.</li>
-            <li><a id="ref-6"></a>Gemini’s « uselessness » is its killer feature | Hacker News. <a
-                    href="https://news.ycombinator.com/item?id=27490769"
-                    class="uri">https://news.ycombinator.com/item?id=27490769</a>. Consulté le 19 novembre 2022.</li>
             <li><a id="ref-13"></a>«Low-tech». Wikipédia, 18 novembre 2022, <a
                     href="https://fr.wikipedia.org/wiki/Low-tech"
                     class="uri">https://fr.wikipedia.org/wiki/Low-tech</a>.</li>
@@ -353,6 +357,11 @@
                     href="https://reporterre.net/La-technologie-douce-meprisee-par-les-entreprises"
                     class="uri">https://reporterre.net/La-technologie-douce-meprisee-par-les-entreprises</a>. Consulté
                 le 20 novembre 2022.</li>
+            <li>
+                <a id="ref-6"></a>Gemini’s « uselessness » is its killer feature | Hacker News. <a
+                    href="https://news.ycombinator.com/item?id=27490769"
+                    class="uri">https://news.ycombinator.com/item?id=27490769</a>. Consulté le 19 novembre 2022.
+            </li>
         </ol>
     </article>
 
